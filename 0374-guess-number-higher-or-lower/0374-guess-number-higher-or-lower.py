@@ -11,6 +11,8 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        
+        # Binary Search Algorithm
         l = 0
         r = n
         #print(n)
