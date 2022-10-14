@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: int
         """
         
-        # Binary Search Algorithm
+        # Binary Search Algorithm O(log n)
         l = 0
         r = n
         #print(n)
@@ -26,5 +26,5 @@ class Solution(object):
             else:
                 #print("number picked is lower")
                 r = m - 1
-            print(m, l, r)
+            #print(m, l, r)
                 
