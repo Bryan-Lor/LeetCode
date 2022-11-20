@@ -22,12 +22,12 @@ class Solution(object):
             try:
                 # If next number is greater, then subtract its value from current
                 if roman[s[i]] < roman[s[i+1]]:
-                    print("added", roman[s[i+1]] - roman[s[i]], "subtracted")
+                    #print("added", roman[s[i+1]] - roman[s[i]], "subtracted")
                     sum += roman[s[i+1]] - roman[s[i]]
                     i+=2
                 # Otherwise just add itself
                 else:
-                    print("added", roman[s[i]])
+                    #print("added", roman[s[i]])
                     sum += roman[s[i]]
                     i += 1
             except:
@@ -36,7 +36,7 @@ class Solution(object):
                     sum += roman[s[i]]
                 except:
                     pass
-                print("No next number")
+                #print("No next number")
                 break
-        print("Total", sum)
+        #print("Total", sum)
         return sum
