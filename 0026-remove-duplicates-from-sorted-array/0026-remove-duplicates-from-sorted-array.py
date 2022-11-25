@@ -1,5 +1,6 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        # O(n) solution with O(1) space complexity.
         # Sliding Window Technique. Using two pointers, constantly move right pointer
         # and if previous is not the same, update left pointer to current right pointer.
         # Additionally add l each time to l in order to count unique numbers.
