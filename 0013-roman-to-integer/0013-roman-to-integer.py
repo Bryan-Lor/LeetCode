@@ -1,5 +1,10 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
+        # O(n) solution where the algorithm iteratively loops through all
+        # characters of the string, as you loop through you add to a sum
+        # and if the next character has a higher value then you would subtract
+        # the next character from the current. 
+        
         roman = {
             "I":1,
             "V":5,
