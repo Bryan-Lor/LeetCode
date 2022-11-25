@@ -4,6 +4,7 @@ class Solution:
         # In this case we will slide the right pointer by one, and set the left pointer
         # to it's smallest found value. Then we can calculate the profit and return the max
         # profit via a simple check. Code runs in O(n) time and O(1) space.
+        
         maxP, l  = 0, 0
         for r in range(1, len(prices)):
             if prices[r] < prices[l]: 
