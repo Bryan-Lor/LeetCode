@@ -12,6 +12,7 @@ class Solution(object):
 #             n1 = fibNum
 #         return n1
     
+    
     # O(n) solution where you recursively calculate the fibinacci number with memoization
     def fib(self, n, memo = {}):
         if n in memo:
