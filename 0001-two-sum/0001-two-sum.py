@@ -1,7 +1,8 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # O(n^2) solution where you iteratively[O(n)] go through each item and search if
-        # target - nums[i] exists within the list. If so, simply return the two indexes which .         # also takes [O(n)] times. O(n) * O(n) = O(n^2)
+        # target - nums[i] exists within the list. If so, simply return the two indexes which .
+        # also takes [O(n)] times. O(n) * O(n) = O(n^2)
         # for i in range(len(nums)):
         #     complimentaryNumber = target - nums[i]
         #     if complimentaryNumber in nums and nums.index(complimentaryNumber) != i:
