@@ -1,19 +1,18 @@
-class Solution(object):
-    def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        temp = []
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        # O(n) Solution where you create a set from the string and iterate through that set counting the characters and appending the even values into a list which the sum will be returned
+        countList = []
         setValues = set(s)
-        for c in setValues:
-            if s.count(c) > 1 and s.count(c) % 2 == 0:
-                temp.append(s.count(c))
+        
+        for char in setValues:
+            count = s.count(char)
+            if count > 1 and count % 2 == 0:
+                countList.append(count)
             else:
-                temp.append(s.count(c)-1)
-        if sum(temp) == len(s):
-            return sum(temp)
+                countList.append(count - 1)
+                
+        sumAmount = sum(countList)
+        if sumAmount == len(s):
+            return sumAmount
         else:
-            return sum(temp) + 1
-                
-                
+            return sumAmount + 1
