@@ -20,9 +20,10 @@ class Solution(object):
 #         return -1
 
         # O(n) optimized solution
+        totalSum = sum(nums)
         leftSum = 0
         for i in range(len(nums)):
-            if leftSum == sum(nums) - leftSum - nums[i]:
+            if leftSum == totalSum - leftSum - nums[i]:
                 return i
             leftSum += nums[i]
         return -1
