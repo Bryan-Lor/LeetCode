@@ -1,6 +1,6 @@
 class Solution:
     def getHint(self, secret: str, guess: str) -> str:
-#         # Brute Force O(n^3) Solution where you create 4 maps to count bulls and cows
+#         # Brute Force O(n) Solution where you create 4 maps to count bulls and cows
 #         length = len(secret)
 #         bullsMap = list((guess[i] == secret[i] for i in range(length)))
 #         #print("BullsMap:", bullsMap)
@@ -36,7 +36,7 @@ class Solution:
                 
 #         return str(sum(bullsMap)) + "A" + str(cowSum) + "B"
 
-        # More optimized O(n^2)
+        # More optimized O(n) Solution with one hashmap and two loops to iterate through list
         length = len(secret)
         
         # Get secretMap dictionary using python's Counter function
