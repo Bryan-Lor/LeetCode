@@ -42,17 +42,17 @@ class Solution:
         # More optimized O(n) Solution with one hashmap with two loops to count bulls and cows
         length = len(secret)
         
-        # Get secretMap dictionary using python's Counter function
+        # Get all letters and their counts using python's Counter function
         secretMap = Counter(secret)
         
-        # Iterate and retrive sum of bulls
+        # Count sum of bulls
         bullSum = 0
         for i in range(length):
             if guess[i] == secret[i]:
                 bullSum += 1
                 secretMap[guess[i]] -= 1
                 
-        # Count remaining cows
+        # Count sum of cows
         cowSum = 0
         for i in range(length):
             if guess[i] in secretMap and guess[i] != secret[i] and secretMap[guess[i]] > 0:
