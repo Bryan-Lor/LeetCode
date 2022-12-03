@@ -39,6 +39,7 @@ class Solution:
 #         return str(sum(bullsMap)) + "A" + str(cowSum) + "B"
 
 
+
         # More optimized O(n) Solution with one hashmap and two loops to count bulls and cows
         length = len(secret)
         
