@@ -66,3 +66,4 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
              if complimentaryNumber in nums and nums.index(complimentaryNumber) != i:
                  return [i, nums.index(complimentaryNumber)]
 ```
+Time: 65 ms (92.39%), Space: 15.4 MB (9.61%) - LeetHub
