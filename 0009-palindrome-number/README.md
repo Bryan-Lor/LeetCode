@@ -44,3 +44,4 @@ class Solution:
         else:
             return False
 ```
+Time: 47 ms (99.55%), Space: 13.8 MB (59.78%) - LeetHub
