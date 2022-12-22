@@ -31,6 +31,10 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without converting the integer to a string?</div>
+</br>  
+  
+<details> 
+<summary><b>SHOW SOLUTIONS</b></summary>
 
 ## O(n) Optimal Solution
 ```
@@ -44,4 +48,6 @@ class Solution:
         else:
             return False
 ```
+</details>  
+  
 Time: 47 ms (99.55%), Space: 13.8 MB (59.78%) - LeetHub
