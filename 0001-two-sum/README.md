@@ -36,7 +36,11 @@
 
 <p>&nbsp;</p>
 <strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than&nbsp;<code>O(n<sup>2</sup>)&nbsp;</code>time complexity?</div>
-
+</br>
+  
+<details>
+<summary><b>SHOW SOLUTIONS</b></summary>
+  
 ## O(n) Optimal Linear Solution
 ```
 class Solution:
@@ -66,4 +70,6 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
              if complimentaryNumber in nums and nums.index(complimentaryNumber) != i:
                  return [i, nums.index(complimentaryNumber)]
 ```
+</details>
+
 Time: 65 ms (92.39%), Space: 15.4 MB (9.61%) - LeetHub
