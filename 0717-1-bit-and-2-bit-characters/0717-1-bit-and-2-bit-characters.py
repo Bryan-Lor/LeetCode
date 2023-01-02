@@ -11,8 +11,8 @@ class Solution:
                 left = right -1
                 if (right > len(bits) - 1):
                     right = len(bits) - 1
-                    if (right - left == 1):
-                        left = right
+                    # if (right - left == 1):
+                    left = right
             else:
                 right += 1
                 left = right - 1
