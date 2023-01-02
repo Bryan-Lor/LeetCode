@@ -3,7 +3,6 @@ class Solution:
         # O(n) Solution with sliding window technique. Run two pointers
         # throughout the list to determine if two bit or one bit.
         if len(bits) < 2: return True
-        
         left = 0
         right = 1
         while right < len(bits) - 1:
