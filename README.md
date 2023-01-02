@@ -1,5 +1,5 @@
 # 🖥️ LeetCode
-## Watch My Progress Solving LeetCode Probelms! ✔️
+## Watch My Progress Solving LeetCode Problems! ✔️
 Automatically synced via LeetHub, this repository keeps track of all of my LeetCode submissions and solutions.  
   
 ### My Goals
