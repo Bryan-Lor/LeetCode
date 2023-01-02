@@ -7,7 +7,6 @@ class Solution:
         for i in range(len(nums)):
             if nums[i] == 0:
                 zeroIndexes.append(i)
-        print(zeroIndexes)
         
         counter = 0
         for i, zeroIndex in enumerate(zeroIndexes):
