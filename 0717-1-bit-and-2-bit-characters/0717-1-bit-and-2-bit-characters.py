@@ -1,7 +1,7 @@
 class Solution:
     def isOneBitCharacter(self, bits: List[int]) -> bool:
         # O(n) Solution with sliding window technique. Run two pointers
-        # throughout the list to determine if two bit or one bit.
+        # throughout the list and compare left pointer to determine bit size
         if len(bits) == 1: return True
         left = 0
         right = 1
