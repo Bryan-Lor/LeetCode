@@ -3,5 +3,6 @@ class Solution:
         # O(n) solution that constructs a dictionary with the amount of times
         # the element shows. Then you simply retrieve the element that shows
         # only once in constant time O(1).
+        # O(n) + O(1) = O(n)
         numsMap = Counter(nums)
         return list(numsMap.keys())[list(numsMap.values()).index(1)]
