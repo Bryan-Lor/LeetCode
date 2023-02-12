@@ -10,9 +10,9 @@ class Solution:
                 return m
             if nums[m] > target:
                 r = m - 1
-            if nums[m] < target:
+            else:
                 l = m + 1
-        if(target > nums[m]):
+        if target > nums[m]:
             return m + 1
         else:
             return m
