@@ -3,9 +3,9 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        
         for i in range(m, len(nums1)):
             nums1[i] = nums2[n-1]
             if (n-1 > 0):
                 n -= 1
+                
         nums1.sort()
