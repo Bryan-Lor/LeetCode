@@ -1,14 +1,6 @@
 class Solution:
     def removeDigit(self, number: str, digit: str) -> str:
-#         removed = False
-#         s = ""
-#         for char in number:
-#             if char == digit and not removed:
-#                 removed = True
-#                 continue
-#             s += char
-            
-#         return s
+        # O(N^3) Brute Force Solution
         maxNum = ""
         for i in range(len(number)):
             if number[i] == digit:
