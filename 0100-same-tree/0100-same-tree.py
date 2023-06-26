@@ -10,10 +10,10 @@
 
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        firstTree = []
-        secondTree = []
+        firstTree, secondTree = [], []
         self.bfs(p, firstTree)
         self.bfs(q, secondTree)
+        
         print(firstTree, secondTree)
         if firstTree == secondTree: 
             return True
