@@ -22,8 +22,8 @@ class Solution:
         
     def bfs(self, root: Optional[TreeNode], queue: []): #1 -> [1 2]
         if root is None:
-            queue.append(None)
-            return
+            return queue.append(None)
+            
         queue.append(root.val)
         self.bfs(root.left, queue)
         self.bfs(root.right, queue)
